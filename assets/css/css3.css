@@ -32,7 +32,14 @@ path {
   animation: translation 5s linear infinite;
 }
 */
+body{
+  margin: 0;
+  background-color: black;
+}
 
+svg{
+  margin: auto;
+}
 
 
 #_x32__3_, #_x30__2_, #_x30_inside, #_x32__4_, #_x31__2_ {
@@ -68,6 +75,8 @@ circle {
   stroke: transparent;
   fill: transparent;
 }
+
+
 @keyframes whitefill {
   to {
     stroke: white;

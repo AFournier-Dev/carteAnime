@@ -1,14 +1,14 @@
-#Ligne {
+/*#Ligne {
   stroke: transparent;
   fill: transparent; 
 }
 
-/*
+
 #Fond {
   fill: red;
   stroke: red;
 }
-*/
+
 #carreArrondie {
   stroke: transparent;
   fill: transparent;
@@ -19,7 +19,14 @@ circle {
   fill: transparent;
   
 }
-/*path {
+path {
+  stroke: transparent;
+  fill: transparent;
+  animation: translation 5s linear infinite;
+}
+
+
+#Fond {
   stroke: transparent;
   fill: transparent;
   animation: translation 5s linear infinite;
@@ -27,7 +34,35 @@ circle {
 */
 
 
-@keyframes translation {
+
+#_x32__3_, #_x30__2_, #_x30_inside, #_x32__4_, #_x31__2_ {
+  stroke: transparent;
+  fill: transparent;
+  animation: endTransparence 100s linear infinite;
+}
+
+
+#roundsquare, #roundsquare_1_, #roundsquare_2_, #roundsquare_3_, #roundsquare_4_, #roundsquare_5_, #roundsquare_6_, #roundsquare_7_, #roundsquare_8_, #roundsquare_9_, #roundsquare_10_, #roundsquare_11_, #roundsquare_12_, #roundsquare_13_, #roundsquare_14_, #roundsquare_15_, #roundsquare_16_, #roundsquare_17_, #roundsquare_18_, #roundsquare_19_, #roundsquare_20_, #roundsquare_21_, #roundsquare_22_, #roundsquare_23_, #roundsquare_24_, #roundsquare_25_, #roundsquare_26_, #roundsquare_27_, #roundsquare_28_ {
+  stroke: transparent;
+  fill: transparent;
+  animation: endTransparence 10s linear infinite;
+}
+
+
+@keyframes endTransparence {
+  to {
+    stroke: white;
+  }
+}
+Line {
+  stroke: transparent;
+  fill: transparent;
+}
+circle {
+  stroke: transparent;
+  fill: transparent;
+}
+@keyframes whitefill {
   to {
     stroke: white;
   }

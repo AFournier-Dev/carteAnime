@@ -1,0 +1,34 @@
+#Ligne {
+  stroke: transparent;
+  fill: transparent; 
+}
+
+/*
+#Fond {
+  fill: red;
+  stroke: red;
+}
+*/
+#carreArrondie {
+  stroke: transparent;
+  fill: transparent;
+  animation: translation 20s linear infinite;
+}
+circle {
+  stroke: transparent;
+  fill: transparent;
+  
+}
+/*path {
+  stroke: transparent;
+  fill: transparent;
+  animation: translation 5s linear infinite;
+}
+*/
+
+
+@keyframes translation {
+  to {
+    stroke: white;
+  }
+}

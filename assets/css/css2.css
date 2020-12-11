@@ -1,0 +1,41 @@
+svg {
+  height: 900px;
+  width: 1600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,1px);
+}
+*/
+svg path {
+  animation: cardAnim 50s linear /*cubic-bezier(0.8, 0, 0.2, 1.2) */infinite;
+}
+
+@keyframes cardAnim {
+  0%, 100% {
+    fill:tomato;
+    d:path('M353,341c0,6.627-5.373,12-12,12H18 c-6.627,0-12-5.373-12-12V18c0-6.627,5.373-12,12-12h323c6.627,0,12,5.373,12,12V341z');
+  }
+
+  25% {
+    fill:grey;
+    d:path('M283,334.899c0,6.131-3.793,11.102-8.473,11.102 H46.473C41.794,346,38,341.03,38,334.899V36.101C38,29.97,41.794,25,46.473,25h228.055c4.68,0,8.473,4.97,8.473,11.101V334.899z');
+  }
+
+  50% {
+    fill:tomato;
+    d:path('M353,341c0,6.627-5.373,12-12,12H18 c-6.627,0-12-5.373-12-12V18c0-6.627,5.373-12,12-12h323c6.627,0,12,5.373,12,12V341z');
+  }
+
+  75% {
+    fill:grey;
+    d:path('M283,334.899c0,6.131-3.793,11.102-8.473,11.102 H46.473C41.794,346,38,341.03,38,334.899V36.101C38,29.97,41.794,25,46.473,25h228.055c4.68,0,8.473,4.97,8.473,11.101V334.899z');
+  }
+}
+
+/* Target chrome only , see http://browserhacks.com/ */
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+  small {
+    display: none;
+  }
+}

@@ -1,66 +1,3 @@
-/*#Ligne {
-  stroke: transparent;
-  fill: transparent; 
-}
-
-
-#Fond {
-  fill: red;
-  stroke: red;
-}
-
-#carreArrondie {
-  stroke: transparent;
-  fill: transparent;
-  animation: translation 20s linear infinite;
-}
-circle {
-  stroke: transparent;
-  fill: transparent;
-  
-}
-path {
-  stroke: transparent;
-  fill: transparent;
-  animation: translation 5s linear infinite;
-}
-
-
-#Fond {
-  stroke: transparent;
-  fill: transparent;
-  animation: translation 5s linear infinite;
-}
-
-
-
-
-
-
-
-
-
-
-Line {
-  stroke-dasharray: 100;
-  animation: dash 10s linear infinite;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-
-
-
-@keyframes whitefill {
-  to {
-    stroke: white;
-  }
-}
-*/
-
 body {
   margin: 0;
   background-color: black;
@@ -73,30 +10,35 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 circle {
   stroke: transparent;
   fill: transparent;
 }
+
 #_x32__3_, #_x30__2_, #_x30_inside, #_x32__4_, #_x31__2_ {
   opacity: 1;
   fill: transparent;
-  animation: endTransparence 30s linear ;
+  animation: endTransparence 20s ;
 }
+
 @keyframes endTransparence {
-  0%, 50% { opacity: 0;}
-  100% { opacity: 1;}
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
 #roundsquare, #roundsquare_1_, #roundsquare_2_, #roundsquare_3_, #roundsquare_4_, #roundsquare_5_, #roundsquare_6_, #roundsquare_7_, #roundsquare_8_, #roundsquare_9_, #roundsquare_10_, #roundsquare_11_, #roundsquare_12_, #roundsquare_13_, #roundsquare_14_, #roundsquare_15_, #roundsquare_16_, #roundsquare_17_, #roundsquare_18_, #roundsquare_19_, #roundsquare_20_, #roundsquare_21_, #roundsquare_22_, #roundsquare_23_, #roundsquare_24_, #roundsquare_25_, #roundsquare_26_, #roundsquare_27_, #roundsquare_28_ {
   opacity: 1;
-  animation: endTransparence 10s linear ;
+  animation: endTransparence 5s linear;
 }
 
-
-
-Line {
- 
+line {
   stroke-dasharray: 100;
-  animation: dash 10s linear infinite;
+  animation: dash 5s linear infinite;
 }
 
 @keyframes dash {

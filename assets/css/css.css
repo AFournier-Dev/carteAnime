@@ -16,7 +16,7 @@ svg {
 #_x32__3_, #_x30__2_, #_x30_inside, #_x32__4_, #_x31__2_ {
   opacity: 1;
   fill: transparent;
-  animation: endTransparence 20s ;
+  animation: endTransparence 15s ;
 }
 
 @keyframes endTransparence {
@@ -34,10 +34,15 @@ svg {
 }
 
 line {
+  opacity: 0;
   stroke-dasharray: 100;
   animation: dash 7s linear infinite;
+  animation-delay: 5s;
 }
-
+line.Transmition{
+  opacity: 1;
+  transition: 5s;
+}
 @keyframes dash {
   to {
     stroke-dashoffset: 1000;

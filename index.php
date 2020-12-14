@@ -2,17 +2,6 @@
 require_once 'header.php';
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="centre">
     <h1>Bonjour</h1>
     <p>Voici le moyen d'adresser vos voeux à vos proches</p>
@@ -29,9 +18,6 @@ require_once 'header.php';
         <button type="submit">Valider</button>
     </form>
 </div>
-
-
-
 
 <?php
 

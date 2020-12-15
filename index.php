@@ -10,12 +10,12 @@ require_once 'header.php';
     <p>Le mail de votre correspondant</p>
     <form method="POST">
         <div>
-            <input name="nom" placeholder="Veuiller indiquer votre nom pour votre correspondant">
+            <input type="text" name="nom" placeholder="Veuiller indiquer votre nom pour votre correspondant" required>
         </div>
         <div>
-            <input name="mail" placeholder="Veuiller indiquer le mail du destinataire">
+            <input type="text" name="mail" placeholder="Veuiller indiquer le mail du destinataire" required>
         </div>
-        <button type="submit">Valider</button>
+        <button type="submit">Envoyer</button>
     </form>
 </div>
 
@@ -23,7 +23,9 @@ require_once 'header.php';
 
 if (!empty($_POST)) {
 
-    $email= $_POST['mail'];
+    $email= array_map ('htmlspecialchars', $_POST['mail']);
+
+    var_dump($email);
     $message = "<html><body><a href='https://alexandref544.promo-45.codeur.online/cartedevoeux/card.html'>Vous avez recu une carte</a></body></html>";
     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
     $headers = "MIME-Version: 1.0\r\n";
@@ -32,6 +34,8 @@ if (!empty($_POST)) {
     mail($email, 'Happy new year', $message,  $headers);
 }
 ?>
+
+
 
 
 

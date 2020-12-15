@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+  }
+
+.centre {  
+    color: white;
+    position: absolute;  
+    top: 40%;
+    left: 45%;
+}
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  @keyframes endTransparence {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #roundsquare, #roundsquare_1_, #roundsquare_2_, #roundsquare_3_, #roundsquare_4_, #roundsquare_5_, #roundsquare_6_, #roundsquare_7_, #roundsquare_8_, #roundsquare_9_, #roundsquare_10_, #roundsquare_11_, #roundsquare_12_, #roundsquare_13_, #roundsquare_14_, #roundsquare_15_, #roundsquare_16_, #roundsquare_17_, #roundsquare_18_, #roundsquare_19_, #roundsquare_20_, #roundsquare_21_, #roundsquare_22_, #roundsquare_23_, #roundsquare_24_, #roundsquare_25_, #roundsquare_26_, #roundsquare_27_, #roundsquare_28_ {
+    opacity: 1;
+    animation: endTransparence 5s linear;
+  }
+  
+  line {
+    opacity: 0;
+    stroke-dasharray: 100;
+    animation: dash 7s linear infinite;
+    animation-delay: 5s;
+  }
+  line.Transmition{
+    opacity: 1;
+    transition: 5s;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+  
+  
+  circle {
+    stroke: transparent;
+    fill: transparent;
+  }

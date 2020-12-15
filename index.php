@@ -26,7 +26,7 @@ require_once 'header.php';
 <?php
 if (!empty($_POST)) {
     $email= htmlspecialchars($_POST['mail']);
-    $message = "<html><body><a href='https://alexandref544.promo-45.codeur.online/cartedevoeux/card.html'>Vous avez recu une carte de ".htmlspecialchars($_POST['nom'])."</a></body></html>";
+    $message = "<html><body><a href='https://alexandref544.promo-45.codeur.online/cartedevoeux/card.html'>Vous avez recu une carte de la part de ".htmlspecialchars($_POST['nom'])."</a></body></html>";
     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";

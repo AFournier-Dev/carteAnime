@@ -16,9 +16,11 @@ require_once 'header.php';
         <div>
             <input type="text" name="nom" placeholder="Veuiller indiquer votre nom pour votre correspondant" required>
         </div>
+        <br>
         <div>
             <input type="text" name="mail" placeholder="Veuiller indiquer le mail du destinataire" required>
         </div>
+        <br>
         <button type="submit">Envoyer</button>
     </form>
 </div>

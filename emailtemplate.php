@@ -1,11 +1,10 @@
 <?php
 $firstChar = strtoupper(mb_substr(trim(htmlspecialchars($_POST['nom'])), 0, 1, 'UTF-8'));
-$letters =['A', 'E', 'I', 'O', 'U', 'H', 'Y'];
-if (in_array($firstChar, $letters)){
-    $text = "d' ". htmlspecialchars($_POST['nom']);
-}
-else{
-    $text = "de ". htmlspecialchars($_POST['nom']);
+$letters = ['A', 'E', 'I', 'O', 'U', 'H', 'Y'];
+if (in_array($firstChar, $letters)) {
+    $text = "d' " . htmlspecialchars($_POST['nom']);
+} else {
+    $text = "de " . htmlspecialchars($_POST['nom']);
 }
 $message = '
 
@@ -56,15 +55,14 @@ $message = '
                                         <tr>
                                             <td align="center"
                                                 style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 48px; color:#ffffff; mso-line-height-rule: exactly; line-height: 58px;">
-                                                Vous avez reçu une carte de voeux
+                                               &nsp
                                             </td>
                                         </tr>
                                         <tr>
                                             <td height="250" style="font-size: 30px; line-height: 30px;">
                                                 &nbsp;
                                                 <a href="https://alexandref544.promo-45.codeur.online/cartedevoeux/card.html">Vous
-                                                    avez recu une carte de la part '.
-                                                    $text.'</a>
+                                                    avez recu une carte de voeux de la part ' . $text . '</a>
                                             </td>
                                             
                                         </tr>
@@ -84,16 +82,6 @@ $message = '
         </tbody>
     </table>
 </tbody>
-
-
-
-
-
-
-
-
-
-
 </html>
 
 ';

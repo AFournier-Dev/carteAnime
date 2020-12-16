@@ -54,3 +54,14 @@ circle {
   stroke: transparent;
   fill: transparent;
 }
+
+
+@media screen and (orientation: landscape) {
+  
+}
+
+@media screen and (orientation: portrait) {
+  svg{
+    transform: translate(-75%, -60%);
+  }
+}

@@ -55,7 +55,6 @@ $message = '
                                         <tr>
                                             <td align="center"
                                                 style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 48px; color:#ffffff; mso-line-height-rule: exactly; line-height: 58px;">
-                                               &nsp
                                             </td>
                                         </tr>
                                         <tr>

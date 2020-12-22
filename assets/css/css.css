@@ -63,3 +63,14 @@ circle {
 }
 
 */
+
+@media (orientation: portrait){
+  #paysage{
+    display: none;
+  }
+}
+@media (orientation: landscape){
+  #portrait{
+    display: none;
+  }
+}

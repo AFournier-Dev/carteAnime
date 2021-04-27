@@ -1,11 +1,4 @@
-<?php
-require_once 'header.php';
-?>
-
-
-
-
-
+<?php require_once 'header.php';?>
 <div class="centre">
     <h1>Bonjour</h1>
     <p>Voici le moyen d'adresser vos voeux à vos proches</p>
@@ -24,25 +17,16 @@ require_once 'header.php';
         <button type="submit">Envoyer</button>
     </form>
 </div>
-
 <?php
 if (!empty($_POST)) {
     $email = htmlspecialchars($_POST['mail']);
     require_once "emailtemplate.php";
-
-
     // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=utf-8';
 
     mail($email, 'Happy new year', $message,  implode("\r\n", $headers));
-
     // mail($to, $subject, $message, implode("\r\n", $headers));
 }
 ?>
-
-
-
-
 <?php require_once 'footer.php' ?>

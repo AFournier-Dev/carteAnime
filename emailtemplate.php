@@ -19,7 +19,6 @@ $message = '
     <!--ICI POSSIBILITE DE META AVEC GOOGLE FONT SUPORTER PAR CERTAIN CLIENTS MAIS NE CASSE PAS LE CODE SI NON SUPPORTE-->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
 </head>
-
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
     <table align="center" bgcolor="#000000" width="1250" border="0" cellpadding="0" cellspacing="0">
         <tbody>
@@ -35,8 +34,6 @@ $message = '
                         <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                             <!--[endif]-->
                             <div>
-
-
                                 <table style="text-align: center;" width="100%" border="0" cellpadding="0"
                                     cellspacing="0">
                                     <tbody>
@@ -62,8 +59,7 @@ $message = '
                                                 &nbsp;
                                                 <a href="https://alexandref544.promo-45.codeur.online/cartedevoeux/card.html">Vous
                                                     avez recu une carte de voeux de la part ' . $text . '</a>
-                                            </td>
-                                            
+                                            </td>                                            
                                         </tr>
                                         <tr>
                                             <td height="300" style="font-size: 30px; line-height: 30px;">
@@ -82,5 +78,4 @@ $message = '
     </table>
 </tbody>
 </html>
-
 ';
